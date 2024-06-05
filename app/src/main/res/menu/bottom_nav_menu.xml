@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="guide"
+        android:icon="@drawable/material_symbols_book_2"
+        android:id="@+id/guide"
+        />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Courses"
+        android:icon="@drawable/material_symbols_docs"
+        android:id="@+id/Courses"
+        />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Home"
+        android:checked="true"
+        android:icon="@drawable/material_symbols_home_rounded"
+        android:id="@+id/Home"
+        />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="GPA"
+        android:icon="@drawable/material_symbols_calculate_rounded"
+        android:id="@+id/GPA"
+        />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Profile"
+        android:icon="@drawable/material_symbols_account_circle"
+        android:id="@+id/Profile"
+        />
+</menu>

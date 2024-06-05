@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/toolbarr"
+    android:layout_marginTop="4dp"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/appbar_shape"
+
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/sciencelogo_image"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/faculty"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Faculty of Scince"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toStartOf="@+id/asu_image"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toEndOf="@+id/sciencelogo_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/asu_image"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+
+            android:src="@drawable/asu"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.Toolbar>
+

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCourses"
+    android:background="@color/black">
+
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="\t\t\t Add Courses:"
+        android:textColor="@color/dark_red"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview">
+
+        <RadioButton
+            android:id="@+id/radiosem1"
+            android:layout_width="170dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:checked="true"
+            android:background="@color/dark_red"
+            android:layout_marginLeft="40dp"
+            android:layout_height="wrap_content"
+            android:text="Semester one" />
+
+        <RadioButton
+            android:id="@+id/radiosem2"
+            android:layout_width="170dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@color/dark_red"
+            android:layout_marginLeft="40dp"
+            android:layout_height="wrap_content"
+            android:text="Semester two" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/select_course_s1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginVertical="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/dark_red"
+        android:gravity="center"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_group" />
+
+    <Button
+        android:id="@+id/addcoursebtn"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:onClick="display"
+        android:layout_marginTop="10dp"
+        android:text="Add Course"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/dark_red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_course_s1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
